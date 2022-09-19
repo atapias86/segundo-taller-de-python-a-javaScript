@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Js/funciones_main.js"></script>
+    <script src="Js/funcion_mostar_ocultar.js"></script>
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Python a JavaScript</title>
+</head>
+
+<body>
+    <h1>segundo taller de python a JavaScript</h1>
+    <div class="div_principal">
+        <div class="btn_ejercicios">
+            <section>
+                <button id="btn_01">Ejercicio 01</button>
+                <button id="btn_02">Ejercicio 02</button>
+                <button id="btn_03">Ejercicio 03</button>
+                <button id="btn_04">Ejercicio 04</button>
+                <button id="btn_05">Ejercicio 05</button>
+                <button id="btn_06">Ejercicio 06</button>
+                <button id="btn_07">Ejercicio 07</button>
+                <button id="btn_08">Ejercicio 08</button>
+                <button id="btn_09">Ejercicio 09</button>
+                <button id="btn_10">Ejercicio 10</button>
+                <button id="btn_11">Ejercicio 11</button>
+                <button id="btn_12">Ejercicio 12</button>
+                <button id="btn_13">Ejercicio 13</button>
+            </section>
+        </div>
+        <div class="panel_ejercicios" id="panel_ejercicios">
+            <section>
+                <div id="ejercicio_01" style="display:block;">
+                    <form id="form_01">
+                        <h4>Determinar si un número es positivo y menor que 100</h4>
+                        <input type="number" id="num_01" placeholder="Ingrese un numero">
+                        <textarea id="text_resultado_ejer01" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_02" style="display:none;">
+                    <form id="form_02">
+                        <h4>Calcular cual de los tres numero es mayor</h4>
+                        <input id="numero1" type="number" required placeholder="Ingrese el primer numero">
+                        <input id="numero2" type="number" required placeholder="Ingrese el segundo numero">
+                        <input id="numero3" type="number" required placeholder="Ingrese el tercer numero">
+                        <textarea id="text_resultado_ejer02" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_03" style="display:none;">
+                    <form id="form_03">
+                        <h4>Desarrollar un diagrama que lea 3 valores diferentes e indique el mayor, el menor o si son
+                            iguales</h4>
+                        <input id="numero_1" type="number" required placeholder="Ingrese el primer numero">
+                        <input id="numero_2" type="number" required placeholder="Ingrese el segundo numero">
+                        <input id="numero_3" type="number" required placeholder="Ingrese el tercer numero">
+                        <textarea id="text_resultado_ejer03" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_04" style="display:none;">
+                    <h4>Cálculo de áreas - Elige una figura geométrica:" Triángulo y Círculo</h4>
+                    <select id="selec_opc">
+                        <option value="Selecionar">Selecionar</option>
+                        <option value="Calcular el area del Triángulo">Calcular el area del Triángulo</option>
+                        <option id="opc3_4" value="Calcular el area del Círculo">Calcular el area del Círculo</option>
+                    </select>
+                    <h3 id="h3" style="color:white;"></h3>
+                    <form id="form_04_1" style="display: none;">
+                        <input id="altura" type="number" required placeholder="Ingrese valor de la altura">
+                        <input id="base" type="number" required placeholder="Ingrese valor de la base">
+                        <textarea id="text_resultado_ejer04_1" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                    <form id="form_04_2" style="display: none;">
+                        <input id="radio" type="number" required placeholder="Ingrese el valor del radio">
+                        <textarea id="text_resultado_ejer04_2" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_05" style="display:none;">
+                    <form id="form_05">
+                        <h4>Escriba un algoritmo que calcule el área de un rectángulo siempre y cuando los lados sean
+                            positivos</h4>
+                        <input id="lado_1" type="number" required placeholder="Ingrese el valor lado 1">
+                        <input id="lado_2" type="number" required placeholder="Ingrese el valor lado 2">
+                        <textarea id="text_resultado_ejer05" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_06" style="display:none;">
+                    <form id="form_06">
+                        <h4>Temperatura y presión</h4>
+                        <input id="temp" type="number" required placeholder="Ingrese el valor de la temperatura">
+                        <input id="pres" type="number" required placeholder="Ingrese el valor la presión">
+                        <textarea id="text_resultado_ejer06" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_07" style="display:none;">
+                    <form id="form_07">
+                        <h4>Calcular todos los pagos hechos de un restaurante y que si el consumo ingresado excede los
+                            $130.000 el descuento será del 15%</h4>
+                        <input id="total" type="number" required placeholder="Ingrese el total a pagar">
+                        <textarea id="text_resultado_ejer07" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_08" style="display:none;">
+                    <form id="form_08">
+                        <h4>En cierta empresa se les paga a sus trabajadores de la siguiente forma:</h4>
+                        <select id="select_ejer08">
+                            <option value="Selecionar">Selecionar</option>
+                            <option value="Empleado de planta">Empleado de planta</option>
+                            <option value="Empleado administrativo">Empleado administrativo</option>
+                        </select>
+                        <input id="nom_emp" type="text" required placeholder="Ingrese el nombre del empleado">
+                        <input id="horas_trab" type="number" required
+                            placeholder="Ingrese el numero de horas trabajadas">
+                        <textarea id="text_resultado_ejer08" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_09" style="display:none;">
+                    <h4>Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de
+                        los impares</h4>
+                    <form id="form_09">
+                        <input id="parametro" type="number" required placeholder="Ingrese el parametro de numeros">
+                        <textarea id="text_resultado_ejer09" readonly
+                            placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog" data-ciclo>
+                        <form id="dialog">
+                            <input type="number" name="num_ejer9" required placeholder="Ingrese un numero">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_10" style="display:none;">
+                    <form id="form_10">
+                        <h4>Calcular el valor total del valor de 5 productos, el IVA y el subtotal y el total</h4>
+                        <input id="prodct_01" type="number" required placeholder="Ingrese el valor del producto N°1">
+                        <input id="prodct_02" type="number" required placeholder="Ingrese el valor del producto N°2">
+                        <input id="prodct_03" type="number" required placeholder="Ingrese el valor del producto N°3">
+                        <input id="prodct_04" type="number" required placeholder="Ingrese el valor del producto N°">
+                        <input id="prodct_05" type="number" required placeholder="Ingrese el valor del producto N°5">
+                        <textarea id="text_resultado_ejer10" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_11" style="display:none;">
+                    <h4>Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un
+                        curso de computación.</h4>
+                    <table class="tabla" id="tabla_estud">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>NOMBRE</th>
+                                <th>APELLIDOS</th>
+                                <th>EDAD</td>
+                                <th>NOTA PROMEDIO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer11" >
+                        <form id="dialogo" data-notas="2">
+                            <input type="text" name="nom_estu" required placeholder="Ingrese El nombre del estudiante">
+                            <input type="text" name="ape_estu" required
+                                placeholder="Ingrese los apellidos del estudiante">
+                            <input type="number" name="edad_estu" required placeholder="Ingrese la edad del estudiante">
+                            <input type="number" name="calif_estu" required
+                                placeholder="Ingrese la nota promedio del estudiante">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button id="btn_incio_ejer11" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_12" style="display:none;">
+                    <form id="form_12">
+                        <h4>Restarle al primer número al segundo (siempre y cuando el primero sea mayor que él segundo
+                        </h4>
+                        <input id="primer_num" type="number" required placeholder="Ingrese el primer numero">
+                        <input id="segundo_num" type="number" required placeholder="Ingrese el segundo numero">
+                        <textarea id="text_resultado_ejer12" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_13" style="display:none;">
+                    <form id="form_13">
+                        <h4>Tienda de HELADO</h4>
+                        <select id="select_tipo">
+                            <option value="Tipo membresía">Tipo membresía</option>
+                            <option value="Tipo A">Tipo A</option>
+                            <option value="Tipo B">Tipo B</option>
+                            <option value="Tipo C">Tipo C</option>
+                            <option value="Sin membresía">Sin membresía</option>
+                        </select>
+                        <input id="cant_helado" type="number" required placeholder="Ingrese la cantidad de helados">
+                        <input id="precio_helado" type="number" required placeholder="Ingrese el valor del Helado">
+                        <textarea id="text_resultado_ejer13" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
