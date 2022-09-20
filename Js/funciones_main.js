@@ -213,6 +213,7 @@ addEventListener("DOMContentLoaded", (e) => {
     });
     calcular_ejer11.addEventListener("click", (e) => {
         e.preventDefault();
+        document.querySelector("#dataTable").innerHTML= "";
         favDialog_ejer11.showModal();
     });
     formdialogo_ejer_11.addEventListener("submit", (e) => {
